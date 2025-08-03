@@ -61,7 +61,26 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				portfolio: {
+					surface: 'hsl(var(--portfolio-surface))',
+					'surface-hover': 'hsl(var(--portfolio-surface-hover))',
+					'text-dim': 'hsl(var(--portfolio-text-dim))',
+					accent: 'hsl(var(--portfolio-accent))',
+					'accent-glow': 'hsl(var(--portfolio-accent-glow))'
 				}
+			},
+			backgroundImage: {
+				'gradient-subtle': 'var(--gradient-subtle)',
+				'gradient-glow': 'var(--gradient-glow)'
+			},
+			boxShadow: {
+				'soft': 'var(--shadow-soft)',
+				'glow': 'var(--shadow-glow)'
+			},
+			transitionProperty: {
+				'smooth': 'var(--transition-smooth)',
+				'bounce': 'var(--transition-bounce)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
