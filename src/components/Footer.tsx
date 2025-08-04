@@ -44,7 +44,7 @@ const Footer = () => {
           
           <div className="border-t border-border pt-8">
             <p className="text-sm text-portfolio-text-dim">
-              © {currentYear} Portfólio. Feito com ❤️ e muito código.
+              © {currentYear} Portfólio.
             </p>
           </div>
         </div>
