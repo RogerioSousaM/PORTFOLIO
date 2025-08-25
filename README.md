@@ -25,7 +25,7 @@ Este projeto é construído com:
 
 1. Clone o repositório:
 ```bash
-git clone <[URL_DO_REPOSITORIO](https://github.com/RogerioSousaM/PORTFOLIO)>
+git clone <[(https://github.com/RogerioSousaM/PORTFOLIO])>
 cd Portfolio
 ```
 
