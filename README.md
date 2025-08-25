@@ -1,4 +1,4 @@
-# Portfólio - Desenvolvedor Criativo
+# Portfólio
 
 ## Sobre o Projeto
 
@@ -25,7 +25,7 @@ Este projeto é construído com:
 
 1. Clone o repositório:
 ```bash
-git clone <URL_DO_REPOSITORIO>
+git clone <[URL_DO_REPOSITORIO](https://github.com/RogerioSousaM/PORTFOLIO)>
 cd Portfolio
 ```
 
@@ -58,24 +58,3 @@ src/
 ├── lib/           # Utilitários e configurações
 └── main.tsx       # Ponto de entrada da aplicação
 ```
-
-## Deploy
-
-Para fazer o deploy do projeto:
-
-1. Execute o build de produção:
-```bash
-npm run build
-```
-
-2. Os arquivos de produção estarão na pasta `dist/`
-
-3. Faça o upload dos arquivos para seu servidor de hospedagem
-
-## Contribuição
-
-Este é um projeto pessoal, mas sugestões e melhorias são sempre bem-vindas!
-
-## Licença
-
-Este projeto está sob a licença MIT.
