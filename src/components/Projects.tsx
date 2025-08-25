@@ -44,36 +44,49 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-background">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <p className="text-sm font-medium tracking-[0.2em] text-portfolio-text-dim mb-4 uppercase">
-            TRABALHOS REALIZADOS
-          </p>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            PROJETOS
-          </h2>
-          <div className="w-16 h-0.5 bg-portfolio-accent mx-auto mb-8"></div>
-          <p className="text-lg text-portfolio-text-dim max-w-2xl mx-auto">
+    <section id="projects" className="py-24 bg-background relative">
+      {/* Background decorative elements */}
+      <div className="absolute inset-0 opacity-[0.03]">
+        <div className="absolute top-32 right-20 w-40 h-40 border border-portfolio-accent rounded-full"></div>
+        <div className="absolute bottom-32 left-20 w-32 h-32 border border-portfolio-accent rounded-full"></div>
+      </div>
+      
+      <div className="container mx-auto px-8 relative z-10">
+        {/* Section header */}
+        <div className="text-center mb-20">
+          <div className="mb-8">
+            <p className="text-xs font-medium tracking-[0.3em] text-portfolio-text-dim uppercase mb-4">
+              TRABALHOS
+            </p>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
+              PROJETOS
+            </h2>
+          </div>
+          
+          <div className="w-24 h-px bg-portfolio-accent mx-auto mb-8 opacity-60"></div>
+          
+          <p className="text-lg text-portfolio-text-dim max-w-3xl mx-auto leading-relaxed">
             Uma seleção dos meus projetos mais relevantes, demonstrando 
             diferentes tecnologias e abordagens criativas.
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        {/* Projects grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-7xl mx-auto">
           {projects.map((project, index) => (
             <ProjectCard key={index} {...project} />
           ))}
         </div>
         
-        <div className="text-center mt-16">
+        {/* Footer link */}
+        <div className="text-center mt-20">
           <p className="text-sm text-portfolio-text-dim">
             Mais projetos disponíveis no meu{" "}
             <a 
               href="https://github.com" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-portfolio-accent hover:text-portfolio-accent-glow transition-colors"
+              className="text-portfolio-accent hover:text-portfolio-accent-glow transition-colors duration-300 underline decoration-2 underline-offset-4"
             >
               GitHub
             </a>

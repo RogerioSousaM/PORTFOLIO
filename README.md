@@ -1,4 +1,4 @@
-# Portfólio - Desenvolvedor Criativo
+# Portfólio - Rogério Sousa Moreira
 
 ## Sobre o Projeto
 

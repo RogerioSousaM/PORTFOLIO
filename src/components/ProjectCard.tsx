@@ -31,7 +31,7 @@ const ProjectCard = ({
   };
 
   return (
-    <div className="group relative bg-card border border-border rounded-lg overflow-hidden hover:shadow-glow transition-all duration-500">
+    <div className="group relative bg-card/50 border border-border/50 rounded-2xl overflow-hidden hover:shadow-glow transition-all duration-500 hover:scale-[1.02] backdrop-blur-sm">
       <div className="relative aspect-video overflow-hidden">
         {isVideoPlaying && videoId ? (
           <iframe
@@ -61,42 +61,47 @@ const ProjectCard = ({
           </>
         )}
         
-        <div className="absolute top-4 left-4">
-          <span className="text-xs font-mono text-portfolio-text-dim bg-background/80 backdrop-blur-sm px-2 py-1 rounded">
+        {/* Project number badge */}
+        <div className="absolute top-6 left-6">
+          <span className="text-xs font-mono text-portfolio-text-dim bg-background/90 backdrop-blur-sm px-3 py-2 rounded-xl border border-border/50">
             {number}
           </span>
         </div>
       </div>
       
-      <div className="p-6">
-        <h3 className="text-xl font-bold mb-2 group-hover:text-portfolio-accent transition-colors">
+      <div className="p-8">
+        {/* Project title */}
+        <h3 className="text-2xl font-bold mb-4 group-hover:text-portfolio-accent transition-colors tracking-tight">
           {title}
         </h3>
         
-        <p className="text-portfolio-text-dim text-sm leading-relaxed mb-4">
+        {/* Project description */}
+        <p className="text-portfolio-text-dim text-base leading-relaxed mb-6">
           {description}
         </p>
         
-        <div className="flex flex-wrap gap-2 mb-4">
+        {/* Project tags */}
+        <div className="flex flex-wrap gap-3 mb-6">
           {tags.map((tag, index) => (
             <span
               key={index}
-              className="text-xs px-2 py-1 bg-portfolio-surface text-portfolio-text-dim rounded-md"
+              className="text-xs px-3 py-2 bg-portfolio-surface/50 text-portfolio-text-dim rounded-xl border border-border/30 font-medium"
             >
               {tag}
             </span>
           ))}
         </div>
         
-        <div className="flex items-center gap-3">
+        {/* Project links */}
+        <div className="flex items-center gap-4">
           {liveUrl && (
             <a
               href={liveUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-xs text-portfolio-accent hover:text-portfolio-accent-glow transition-colors"
+              className="flex items-center gap-2 text-sm text-portfolio-accent hover:text-portfolio-accent-glow transition-colors font-medium group/link"
             >
-              <ExternalLink className="w-3 h-3" />
+              <ExternalLink className="w-4 h-4 group-hover/link:scale-110 transition-transform" />
               VER PROJETO
             </a>
           )}
@@ -105,9 +110,9 @@ const ProjectCard = ({
               href={githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-xs text-portfolio-text-dim hover:text-foreground transition-colors"
+              className="flex items-center gap-2 text-sm text-portfolio-text-dim hover:text-foreground transition-colors font-medium group/link"
             >
-              <Github className="w-3 h-3" />
+              <Github className="w-4 h-4 group-hover/link:scale-110 transition-transform" />
               CÓDIGO
             </a>
           )}
