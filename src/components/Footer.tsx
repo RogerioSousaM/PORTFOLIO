@@ -27,7 +27,7 @@ const Footer = () => {
           {/* Social links */}
           <div className="flex items-center justify-center space-x-8 mb-12">
             <a
-              href="https://github.com"
+              href="https://github.com/RogerioSousaM"
               target="_blank"
               rel="noopener noreferrer"
               className="p-4 bg-portfolio-surface/50 hover:bg-portfolio-accent/20 rounded-2xl transition-all duration-300 group hover:scale-110"
@@ -35,7 +35,7 @@ const Footer = () => {
               <Github className="w-6 h-6 text-portfolio-text-dim group-hover:text-portfolio-accent transition-colors" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/rog%C3%A9rio-sousa-moreira-84309486/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-4 bg-portfolio-surface/50 hover:bg-portfolio-accent/20 rounded-2xl transition-all duration-300 group hover:scale-110"
