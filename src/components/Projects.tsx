@@ -83,7 +83,7 @@ const Projects = () => {
           <p className="text-sm text-portfolio-text-dim">
             Mais projetos disponíveis no meu{" "}
             <a 
-              href="https://github.com" 
+              href="https://github.com/RogerioSousaM" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-portfolio-accent hover:text-portfolio-accent-glow transition-colors duration-300 underline decoration-2 underline-offset-4"
