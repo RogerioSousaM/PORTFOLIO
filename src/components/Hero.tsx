@@ -36,9 +36,6 @@ const Hero = () => {
                 Estou sempre aberto a novas oportunidades e projetos interessantes. Se você tem uma ideia em mente ou precisa de ajuda com desenvolvimento, não hesite em entrar em contato através dos canais acima.
               </p>
               <div className="w-16 h-px bg-portfolio-accent mx-auto opacity-60"></div>
-              <p className="text-sm text-portfolio-text-dim mt-6 font-medium">
-                Respondo todas as mensagens em até 24 horas.
-              </p>
             </div>
           </div>
         </div>

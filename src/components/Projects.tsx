@@ -5,7 +5,7 @@ const Projects = () => {
     {
       number: ".01",
       title: "Site de músicas e notícias",
-      description: "O projeto oferece uma experiência completa com portal público para ouvintes e painel administrativo robusto para gestão de conteúdo.",
+      description: "(OBS: em andamento.)O projeto oferece uma experiência completa com portal público para ouvintes e painel administrativo robusto para gestão de conteúdo.",
       image: "/Mo.png",
       videoId: "pr8awus6knY",
       githubUrl: "https://github.com/RogerioSousaM/morden-metal-radio",
@@ -14,7 +14,7 @@ const Projects = () => {
     {
       number: ".02",
       title: "Conversor de fotos",
-      description: "Conversor HEIC (Formato de fotos Iphone) para JPG é uma aplicação desktop desenvolvida em Python que converter fotos HEIC para o formato JPG.",
+      description: "Conversor HEIC (Formato de fotos Iphone) para JPG é uma aplicação desktop desenvolvida em Python que converte fotos HEIC para o formato JPG.",
       image: "/Co.png",
       videoId: "ldWE8cweYYo",
       githubUrl: "https://github.com/usuario/projeto2",
