@@ -30,7 +30,7 @@ const Contact = () => {
           </div>
           
           {/* Contact methods */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {/* E-mail */}
             <div className="text-center group">
               <div className="bg-portfolio-accent/10 p-6 rounded-2xl mb-6 mx-auto w-fit group-hover:bg-portfolio-accent/20 transition-all duration-300">
@@ -56,22 +56,6 @@ const Contact = () => {
               </div>
               <h4 className="font-semibold mb-3 text-lg">Localização</h4>
               <p className="text-portfolio-text-dim">Uberlândia - MG</p>
-            </div>
-          </div>
-          
-          {/* Call to action */}
-          <div className="text-center">
-            <div className="max-w-3xl mx-auto p-12 bg-card/50 border border-border/50 rounded-2xl backdrop-blur-sm">
-              <h3 className="text-3xl font-bold mb-8 tracking-tight">Vamos trabalhar juntos!</h3>
-              <p className="text-portfolio-text-dim leading-relaxed mb-8 text-lg">
-                Estou sempre aberto a novas oportunidades e projetos interessantes. 
-                Se você tem uma ideia em mente ou precisa de ajuda com desenvolvimento, 
-                não hesite em entrar em contato através dos canais acima.
-              </p>
-              <div className="w-16 h-px bg-portfolio-accent mx-auto opacity-60"></div>
-              <p className="text-sm text-portfolio-text-dim mt-6 font-medium">
-                Respondo todas as mensagens em até 24 horas.
-              </p>
             </div>
           </div>
         </div>

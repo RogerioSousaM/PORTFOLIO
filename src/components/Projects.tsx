@@ -4,42 +4,30 @@ const Projects = () => {
   const projects = [
     {
       number: ".01",
-      title: "E-COMMERCE MODERNO",
-      description: "Plataforma completa de e-commerce com design responsivo, carrinho de compras e integração de pagamentos. Construída com React, Node.js e PostgreSQL.",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
-      videoId: "dQw4w9WgXcQ", // Exemplo de ID do YouTube
-      liveUrl: "https://exemplo.com",
-      githubUrl: "https://github.com/usuario/projeto",
-      tags: ["React", "Node.js", "PostgreSQL", "Stripe"]
+      title: "Site de músicas e notícias",
+      description: "O projeto oferece uma experiência completa com portal público para ouvintes e painel administrativo robusto para gestão de conteúdo.",
+      image: "/Mo.png",
+      videoId: "pr8awus6knY",
+      githubUrl: "https://github.com/RogerioSousaM/morden-metal-radio",
+      tags: ["React", "Node.js", "SQLite"]
     },
     {
       number: ".02",
-      title: "APP MÓVEL NATIVO",
-      description: "Aplicativo móvel para gerenciamento de tarefas com sincronização em tempo real e interface intuitiva. Desenvolvido com React Native e Firebase.",
-      image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&h=400&fit=crop",
-      videoId: "dQw4w9WgXcQ",
-      liveUrl: "https://exemplo2.com",
+      title: "Conversor de fotos",
+      description: "Conversor HEIC (Formato de fotos Iphone) para JPG é uma aplicação desktop desenvolvida em Python que converter fotos HEIC para o formato JPG.",
+      image: "/Co.png",
+      videoId: "ldWE8cweYYo",
       githubUrl: "https://github.com/usuario/projeto2",
-      tags: ["React Native", "Firebase", "TypeScript", "Redux"]
+      tags: ["Python"]
     },
     {
       number: ".03",
-      title: "DASHBOARD ANALÍTICO",
-      description: "Interface de análise de dados em tempo real com gráficos interativos e relatórios customizáveis. Implementado com Vue.js e D3.js.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
-      videoId: "dQw4w9WgXcQ",
-      liveUrl: "https://exemplo3.com",
-      githubUrl: "https://github.com/usuario/projeto3",
-      tags: ["Vue.js", "D3.js", "Python", "FastAPI"]
-    },
-    {
-      number: ".04",
-      title: "SITE INSTITUCIONAL",
-      description: "Website corporativo com CMS personalizado, otimização SEO e performance excepcional. Criado com Next.js e Strapi.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
-      liveUrl: "https://exemplo4.com",
-      githubUrl: "https://github.com/usuario/projeto4",
-      tags: ["Next.js", "Strapi", "GraphQL", "Vercel"]
+      title: "CRUD com Angular",
+      description: "CRUD completo desenvolvido com Angular, NestJS e SQL Server, arquitetura moderna com TypeORM e sistema de migrations.",
+      image: "/An.png",
+      videoId: "yaojrzdMiTc",
+      githubUrl: "https://github.com/RogerioSousaM/estudo_angular",
+      tags: ["Angular", "NestJS", "SQL Server"]
     }
   ];
 
@@ -72,15 +60,15 @@ const Projects = () => {
         </div>
         
         {/* Projects grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 max-w-7xl mx-auto">
           {projects.map((project, index) => (
             <ProjectCard key={index} {...project} />
           ))}
         </div>
         
         {/* Footer link */}
-        <div className="text-center mt-20">
-          <p className="text-sm text-portfolio-text-dim">
+        <div className="text-center mt-16">
+          <p className="text-2xl text-portfolio-text-dim">
             Mais projetos disponíveis no meu{" "}
             <a 
               href="https://github.com/RogerioSousaM" 

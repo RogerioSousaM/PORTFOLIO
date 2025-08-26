@@ -2,7 +2,7 @@ const Hero = () => {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-subtle relative overflow-hidden">
       {/* Background decorative elements */}
-      <div className="absolute inset-0 opacity-5">
+      <div className="absolute inset-0 opacity-[0.03]">
         <div className="absolute top-20 left-20 w-32 h-32 border border-portfolio-accent rounded-full"></div>
         <div className="absolute bottom-20 right-20 w-24 h-24 border border-portfolio-accent rounded-full"></div>
         <div className="absolute top-1/2 left-10 w-16 h-16 border border-portfolio-accent rounded-full"></div>
@@ -28,25 +28,17 @@ const Hero = () => {
           {/* Decorative line */}
           <div className="w-20 h-px bg-portfolio-accent mx-auto mb-16 opacity-60"></div>
           
-          {/* Stats section */}
-          <div className="flex items-center justify-center space-x-12 md:space-x-16">
-            <div className="text-center group">
-              <div className="text-3xl font-bold text-portfolio-accent mb-2 group-hover:scale-110 transition-transform duration-300">03+</div>
-              <div className="text-xs font-medium text-portfolio-text-dim tracking-[0.2em] uppercase">ANOS</div>
-            </div>
-            
-            <div className="w-px h-16 bg-border opacity-40"></div>
-            
-            <div className="text-center group">
-              <div className="text-3xl font-bold text-portfolio-accent mb-2 group-hover:scale-110 transition-transform duration-300">15+</div>
-              <div className="text-xs font-medium text-portfolio-text-dim tracking-[0.2em] uppercase">PROJETOS</div>
-            </div>
-            
-            <div className="w-px h-16 bg-border opacity-40"></div>
-            
-            <div className="text-center group">
-              <div className="text-3xl font-bold text-portfolio-accent mb-2 group-hover:scale-110 transition-transform duration-300">100%</div>
-              <div className="text-xs font-medium text-portfolio-text-dim tracking-[0.2em] uppercase">DEDICAÇÃO</div>
+          {/* Call to action */}
+          <div className="text-center">
+            <div className="max-w-3xl mx-auto p-12 bg-card/50 border border-border/50 rounded-2xl backdrop-blur-sm">
+              <h3 className="text-3xl font-bold mb-8 tracking-tight">Vamos trabalhar juntos!</h3>
+              <p className="text-portfolio-text-dim leading-relaxed mb-8 text-lg">
+                Estou sempre aberto a novas oportunidades e projetos interessantes. Se você tem uma ideia em mente ou precisa de ajuda com desenvolvimento, não hesite em entrar em contato através dos canais acima.
+              </p>
+              <div className="w-16 h-px bg-portfolio-accent mx-auto opacity-60"></div>
+              <p className="text-sm text-portfolio-text-dim mt-6 font-medium">
+                Respondo todas as mensagens em até 24 horas.
+              </p>
             </div>
           </div>
         </div>
