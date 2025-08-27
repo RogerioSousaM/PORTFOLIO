@@ -77,4 +77,76 @@ All colors MUST be HSL.
   body {
     @apply bg-background text-foreground;
   }
+
+  /* Mobile-specific improvements */
+  @media (max-width: 640px) {
+    html {
+      font-size: 14px;
+    }
+    
+    /* Improve touch targets on mobile */
+    button, a {
+      min-height: 44px;
+      min-width: 44px;
+    }
+    
+    /* Better scrolling on mobile */
+    body {
+      -webkit-overflow-scrolling: touch;
+    }
+    
+    /* Prevent zoom on input focus */
+    input, textarea, select {
+      font-size: 16px;
+    }
+  }
+
+  /* Prevent horizontal scroll on mobile */
+  .container {
+    overflow-x: hidden;
+  }
+  
+  /* Better text rendering on mobile */
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+  
+  /* Improve performance on mobile */
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+@layer components {
+  /* Mobile-first responsive utilities */
+  .mobile-padding {
+    @apply px-4 sm:px-6 md:px-8;
+  }
+  
+  .mobile-margin {
+    @apply my-4 sm:my-6 md:my-8;
+  }
+  
+  .mobile-text {
+    @apply text-sm sm:text-base md:text-lg;
+  }
+  
+  .mobile-heading {
+    @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl;
+  }
+  
+  /* Mobile-specific component styles */
+  .mobile-card {
+    @apply p-4 sm:p-6 md:p-8;
+  }
+  
+  .mobile-button {
+    @apply px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base;
+  }
+  
+  .mobile-grid {
+    @apply grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8;
+  }
 }

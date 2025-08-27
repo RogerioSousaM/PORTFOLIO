@@ -1,60 +1,106 @@
-# Portfólio - Rogério Sousa Moreira
+# Portfólio
 
-## Sobre o Projeto
+Portfólio pessoal de desenvolvedor criado com React, TypeScript e Tailwind CSS. Criando experiências digitais únicas através de código limpo e design elegante.
 
-Este é um portfólio pessoal desenvolvido com tecnologias modernas para mostrar projetos e habilidades de desenvolvimento.
+## 🚀 Tecnologias
 
-## Tecnologias Utilizadas
+- **React** - 
+- **TypeScript** 
+- **Tailwind CSS** 
+- **Vite** 
+- **Radix UI** 
+- **Lucide React** 
 
-Este projeto é construído com:
+## ✨ Características
 
-- **Vite** - Build tool e dev server
-- **TypeScript** - Linguagem de programação tipada
-- **React** - Biblioteca para interfaces de usuário
-- **shadcn/ui** - Componentes de UI modernos
-- **Tailwind CSS** - Framework CSS utilitário
+- 🎨 Design elegante e moderno
+- 📱 **Totalmente responsivo para mobile**
+- 🌙 Tema escuro elegante
+- ⚡ Performance otimizada
+- ♿ Acessibilidade aprimorada
+- 🔍 SEO otimizado
 
-## Como Executar o Projeto
+## 📱 Responsividade Mobile
 
-### Pré-requisitos
+O site foi desenvolvido com uma abordagem **mobile-first**, garantindo uma experiência perfeita em todos os dispositivos:
 
-- Node.js (versão 18 ou superior)
-- npm ou yarn
+- **Breakpoints responsivos**: xs (475px), sm (640px), md (768px), lg (1024px), xl (1280px), 2xl (1536px)
+- **Menu mobile**: Navegação hambúrguer para dispositivos móveis
+- **Grid adaptativo**: Layout que se adapta automaticamente ao tamanho da tela
+- **Touch-friendly**: Botões e elementos otimizados para toque
+- **Performance mobile**: Otimizações específicas para dispositivos móveis
 
-### Instalação
+## 🛠️ Instalação
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/RogerioSousaM/PORTFOLIO
-cd Portfolio
+git clone https://github.com/RogerioSousaM/portfolio.git
+cd portfolio
 ```
 
 2. Instale as dependências:
 ```bash
 npm install
+# ou
+yarn install
+# ou
+bun install
 ```
 
-3. Execute o servidor de desenvolvimento:
+3. Execute o projeto em desenvolvimento:
 ```bash
 npm run dev
+# ou
+yarn dev
+# ou
+bun dev
 ```
 
-4. Abra [http://localhost:5173](http://localhost:5173) no seu navegador.
+4. Abra [http://localhost:8080](http://localhost:8080) no seu navegador.
 
-## Scripts Disponíveis
+## 📦 Scripts Disponíveis
 
 - `npm run dev` - Inicia o servidor de desenvolvimento
-- `npm run build` - Cria a build de produção
-- `npm run preview` - Visualiza a build de produção localmente
-- `npm run lint` - Executa o linter para verificar o código
+- `npm run build` - Build para produção
+- `npm run build:dev` - Build para desenvolvimento
+- `npm run build:mobile` - Build otimizado para mobile
+- `npm run preview` - Preview do build de produção
+- `npm run lint` - Executa o linter
 
-## Estrutura do Projeto
+## 🎯 Estrutura do Projeto
 
 ```
 src/
-├── components/     # Componentes React reutilizáveis
-├── pages/         # Páginas da aplicação
-├── hooks/         # Custom hooks
-├── lib/           # Utilitários e configurações
-└── main.tsx       # Ponto de entrada da aplicação
+├── components/          # Componentes React reutilizáveis
+│   ├── Header.tsx      # Cabeçalho com navegação
+│   ├── Hero.tsx        # Seção principal
+│   ├── Projects.tsx    # Seção de projetos
+│   ├── ProjectCard.tsx # Card individual de projeto
+│   ├── Contact.tsx     # Seção de contato
+│   └── Footer.tsx      # Rodapé
+├── pages/              # Páginas da aplicação
+├── hooks/              # Hooks customizados
+├── lib/                # Utilitários e configurações
+├── App.tsx             # Componente principal
+└── main.tsx            # Ponto de entrada
 ```
+
+## 🔧 Configurações
+
+### Tailwind CSS
+- Breakpoints customizados para mobile
+- Sistema de cores personalizado
+- Utilitários responsivos
+
+### PostCSS
+- Autoprefixer configurado para suporte mobile
+- Grid CSS autoplace
+
+### Browserslist
+- Suporte a navegadores modernos
+- Suporte específico para iOS 12+ e Android 5+
+
+
+- **GitHub**: [@RogerioSousaM](https://github.com/RogerioSousaM)
+- **LinkedIn**: [Rogério Sousa Moreira](https://www.linkedin.com/in/rog%C3%A9rio-sousa-moreira-84309486/)
+

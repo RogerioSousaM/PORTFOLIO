@@ -32,43 +32,43 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-24 bg-background relative">
+    <section id="projects" className="py-16 sm:py-20 md:py-24 bg-background relative">
       {/* Background decorative elements */}
       <div className="absolute inset-0 opacity-[0.03]">
-        <div className="absolute top-32 right-20 w-40 h-40 border border-portfolio-accent rounded-full"></div>
-        <div className="absolute bottom-32 left-20 w-32 h-32 border border-portfolio-accent rounded-full"></div>
+        <div className="absolute top-32 right-4 sm:right-20 w-20 sm:w-40 h-20 sm:h-40 border border-portfolio-accent rounded-full"></div>
+        <div className="absolute bottom-32 left-4 sm:left-20 w-16 sm:w-32 h-16 sm:h-32 border border-portfolio-accent rounded-full"></div>
       </div>
       
-      <div className="container mx-auto px-8 relative z-10">
+      <div className="container mx-auto px-4 sm:px-8 relative z-10">
         {/* Section header */}
-        <div className="text-center mb-20">
-          <div className="mb-8">
-            <p className="text-xs font-medium tracking-[0.3em] text-portfolio-text-dim uppercase mb-4">
+        <div className="text-center mb-12 sm:mb-16 md:mb-20">
+          <div className="mb-6 sm:mb-8">
+            <p className="text-xs font-medium tracking-[0.3em] text-portfolio-text-dim uppercase mb-3 sm:mb-4">
               TRABALHOS
             </p>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
               PROJETOS
             </h2>
           </div>
           
-          <div className="w-24 h-px bg-portfolio-accent mx-auto mb-8 opacity-60"></div>
+          <div className="w-16 sm:w-24 h-px bg-portfolio-accent mx-auto mb-6 sm:mb-8 opacity-60"></div>
           
-          <p className="text-lg text-portfolio-text-dim max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg text-portfolio-text-dim max-w-3xl mx-auto leading-relaxed px-4">
             Uma seleção dos meus projetos mais relevantes, demonstrando 
             diferentes tecnologias e abordagens criativas.
           </p>
         </div>
         
         {/* Projects grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-12 max-w-7xl mx-auto">
           {projects.map((project, index) => (
             <ProjectCard key={index} {...project} />
           ))}
         </div>
         
         {/* Footer link */}
-        <div className="text-center mt-16">
-          <p className="text-2xl text-portfolio-text-dim">
+        <div className="text-center mt-12 sm:mt-16">
+          <p className="text-lg sm:text-xl md:text-2xl text-portfolio-text-dim px-4">
             Mais projetos disponíveis no meu{" "}
             <a 
               href="https://github.com/RogerioSousaM" 
