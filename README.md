@@ -103,4 +103,3 @@ src/
 
 - **GitHub**: [@RogerioSousaM](https://github.com/RogerioSousaM)
 - **LinkedIn**: [Rogério Sousa Moreira](https://www.linkedin.com/in/rog%C3%A9rio-sousa-moreira-84309486/)
-

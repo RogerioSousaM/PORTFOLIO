@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Play, ExternalLink, Github } from "lucide-react";
+import { Play, ExternalLink, Github, Video } from "lucide-react";
 
 interface ProjectCardProps {
   number: string;
@@ -48,14 +48,27 @@ const ProjectCard = ({
               alt={title}
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
             />
+            
+            {/* Video indicator overlay */}
             {videoId && (
-              <div className="absolute inset-0 bg-black/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="absolute inset-0 bg-black/40 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                {/* Video icon indicator */}
+                <div className="bg-white/20 backdrop-blur-sm rounded-full p-3 mb-3">
+                  <Video className="w-6 h-6 text-white" />
+                </div>
+                
+                {/* Play button */}
                 <button
                   onClick={handlePlayVideo}
-                  className="bg-white/20 backdrop-blur-sm rounded-full p-3 sm:p-4 hover:bg-white/30 transition-colors"
+                  className="bg-white/20 backdrop-blur-sm rounded-full p-4 hover:bg-white/30 transition-colors"
                 >
-                  <Play className="w-6 h-6 sm:w-8 sm:h-8 text-white fill-white" />
+                  <Play className="w-8 h-8 text-white fill-white" />
                 </button>
+                
+                {/* Video label */}
+                <p className="text-white text-sm font-medium mt-3 bg-black/50 px-3 py-1 rounded-full">
+                  ASSISTIR VÍDEO
+                </p>
               </div>
             )}
           </>
@@ -67,6 +80,16 @@ const ProjectCard = ({
             {number}
           </span>
         </div>
+        
+        {/* Video badge indicator */}
+        {videoId && !isVideoPlaying && (
+          <div className="absolute top-3 sm:top-6 right-3 sm:right-6">
+            <span className="flex items-center gap-1 text-xs font-medium text-white bg-red-500/90 backdrop-blur-sm px-2 sm:px-3 py-1 sm:py-2 rounded-xl border border-red-400/50">
+              <Video className="w-3 h-3" />
+              VÍDEO
+            </span>
+          </div>
+        )}
       </div>
       
       <div className="p-4 sm:p-6 md:p-8">
