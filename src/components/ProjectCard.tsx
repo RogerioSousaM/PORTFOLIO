@@ -51,13 +51,7 @@ const ProjectCard = ({
             
             {/* Video indicator overlay */}
             {videoId && (
-              <div className="absolute inset-0 bg-black/40 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                {/* Video icon indicator */}
-                <div className="bg-white/20 backdrop-blur-sm rounded-full p-3 mb-3">
-                  <Video className="w-6 h-6 text-white" />
-                </div>
-                
-                {/* Play button */}
+              <div className="absolute inset-0 bg-black/40 flex flex-col items-center justify-center transition-opacity duration-300">                
                 <button
                   onClick={handlePlayVideo}
                   className="bg-white/20 backdrop-blur-sm rounded-full p-4 hover:bg-white/30 transition-colors"

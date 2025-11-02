@@ -30,8 +30,10 @@ const Contact = () => {
           </div>
           
           {/* Contact methods */}
+          {/* O contêiner principal do grid deve ser mantido simples para evitar problemas de overflow: hidden */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 md:gap-12">
-            {/* E-mail */}
+            
+            {/* E-mail (MANTIDO) */}
             <div className="text-center group">
               <div className="bg-portfolio-accent/10 p-4 sm:p-6 rounded-2xl mb-4 sm:mb-6 mx-auto w-fit group-hover:bg-portfolio-accent/20 transition-all duration-300">
                 <Mail className="w-6 h-6 sm:w-8 sm:h-8 text-portfolio-accent" />
@@ -40,17 +42,38 @@ const Contact = () => {
               <p className="text-sm sm:text-base text-portfolio-text-dim">doug7t@hotmail.com</p>
             </div>
             
-            {/* WhatsApp */}
-            <div className="text-center group">
-              <div className="bg-portfolio-accent/10 p-4 sm:p-6 rounded-2xl mb-4 sm:mb-6 mx-auto w-fit group-hover:bg-portfolio-accent/20 transition-all duration-300">
-                <MessageCircle className="w-6 h-6 sm:w-8 sm:h-8 text-portfolio-accent" />
+            {/* 🚀 WHATSAPP OTIMIZADO (Intuitivo, Z-Index, Encolhe no Hover e Tamanho Menor) */}
+            <a
+              href="https://wa.me/5534998213827"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-center group block 
+                         p-4 rounded-3xl border-2 border-transparent 
+                         bg-portfolio-surface-light shadow-2xl transition-all duration-300 ease-in-out 
+                         cursor-pointer relative z-10 transform 
+                         hover:border-green-500 hover:shadow-green-500/50 hover:scale-[0.98] hover:z-20" // Reduziu o padding (p-4), adicionou Z-Index e scale-[0.98]
+            >
+              <div className="bg-green-500/20 p-4 sm:p-6 rounded-full mb-4 sm:mb-6 mx-auto w-fit 
+                              group-hover:bg-green-500/30 transition-all duration-300">
+                {/* Ícone em verde e ligeiramente menor para reduzir o bloco */}
+                <MessageCircle className="w-7 h-7 sm:w-9 sm:h-9 text-green-500" /> 
               </div>
-              <h4 className="font-semibold mb-2 sm:mb-3 text-base sm:text-lg">WhatsApp</h4>
-              <p className="text-sm sm:text-base text-portfolio-text-dim">(34) 99821-3827</p>
-            </div>
+              <h4 className="font-extrabold mb-2 sm:mb-3 text-lg sm:text-xl text-green-500">
+                FALE COMIGO
+              </h4>
+              <p className="text-sm sm:text-base text-portfolio-text-dim font-medium">
+                (34) 99821-3827
+              </p>
+              <p className="text-base font-bold text-green-400 mt-2 
+                            group-hover:text-green-300 transition-colors">
+                CLIQUE PARA CONVERSAR!
+              </p>
+            </a>
+
             
-            {/* Localização */}
+            {/* Localização (CORRIGIDO) */}
             <div className="text-center group sm:col-span-2 md:col-span-1">
+              {/* Corrigido o BG para usar 'portfolio-accent' ou 'green-500/10' (melhor usar a cor padrão ou a cor do WhatsApp) */}
               <div className="bg-portfolio-accent/10 p-4 sm:p-6 rounded-2xl mb-4 sm:mb-6 mx-auto w-fit group-hover:bg-portfolio-accent/20 transition-all duration-300">
                 <MapPin className="w-6 h-6 sm:w-8 sm:h-8 text-portfolio-accent" />
               </div>

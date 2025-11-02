@@ -5,29 +5,29 @@ const Projects = () => {
     {
       number: ".01",
       title: "Site de músicas e notícias",
-      description: "(OBS: em andamento.)O projeto oferece uma experiência completa com portal público para ouvintes e painel administrativo robusto para gestão de conteúdo.",
+      description: "(Em andamento) Portal público para ouvintes e painel administrativo para gestão de conteúdo; foco em experiência do usuário e backend para upload/gerência de mídias.",
       image: "/Mo.png",
       videoId: "pr8awus6knY",
       githubUrl: "https://github.com/RogerioSousaM/morden-metal-radio",
-      tags: ["React", "Node.js", "SQLite"]
+      tags: ["React", "Node.js", "SQLite"],
     },
     {
       number: ".02",
       title: "Conversor de fotos",
-      description: "Conversor HEIC (Formato de fotos Iphone) para JPG é uma aplicação desktop desenvolvida em Python que converte fotos HEIC para o formato JPG.",
+      description: "Aplicação desktop em Python para converter fotos HEIC (iPhone) para JPG, facilitando compatibilidade e integração em fluxos que exigem formatos padrão.",
       image: "/Co.png",
       videoId: "ldWE8cweYYo",
       githubUrl: "https://github.com/usuario/projeto2",
-      tags: ["Python"]
+      tags: ["Python"],
     },
     {
       number: ".03",
       title: "CRUD com Angular",
-      description: "CRUD completo desenvolvido com Angular, NestJS e SQL Server, arquitetura moderna com TypeORM e sistema de migrations.",
+      description: "Sistema CRUD completo com Angular (frontend), NestJS (API) e SQL Server; arquitetura com TypeORM e migrations para facilitar evoluções e manutenção.",
       image: "/An.png",
       videoId: "yaojrzdMiTc",
       githubUrl: "https://github.com/RogerioSousaM/estudo_angular",
-      tags: ["Angular", "NestJS", "SQL Server"]
+      tags: ["Angular", "NestJS", "SQL Server"],
     }
   ];
 

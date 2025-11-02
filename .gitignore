@@ -163,3 +163,10 @@ storybook-static
 # Temporary files
 *.tmp
 *.temp
+
+
+# Pasta de build para Create React App
+/build
+
+# Pasta de build para Vite
+/dist
