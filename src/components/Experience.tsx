@@ -33,7 +33,7 @@ const experiences = [
 
 const Experience = () => {
   return (
-    <section id="experience" className="py-12 sm:py-24 bg-background">
+    <section id="experience" className="py-24 sm:py-20 bg-background">
       <div className="container mx-auto px-4 sm:px-0 relative z-10">
         <div className="mb-12 sm:mb-15 text-center">
           <h1 className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-none">
@@ -42,6 +42,7 @@ const Experience = () => {
           </h1>
         </div>
       </div>
+
       <div className="container mx-auto px-4 sm:px-8">
         <div className="text-center mb-8 sm:mb-12">
           <p className="text-xs font-medium tracking-[0.3em] text-portfolio-text-dim uppercase mb-3 sm:mb-4">EXPERIÊNCIA</p>
