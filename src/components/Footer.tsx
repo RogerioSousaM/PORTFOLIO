@@ -56,7 +56,7 @@ const Footer = () => {
           {/* Copyright */}
           <div className="border-t border-border/30 pt-6 sm:pt-8">
             <p className="text-xs sm:text-sm text-portfolio-text-dim font-medium px-4">
-              © {currentYear} Rogério Sousa Moreira. Todos os direitos reservados.
+              © {currentYear} Rogério Sousa Moreira.
             </p>
           </div>
         </div>

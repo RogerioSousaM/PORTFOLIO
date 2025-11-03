@@ -10,7 +10,7 @@ const skills = [
 
 const Skills = () => {
   return (
-    <section id="skills" className="py-12 sm:py-16 bg-background relative">
+    <section id="skills" className="py-12 sm:py-1 bg-background relative">
       <div id="home" className="scroll-mt-20" />
 
         <div className="text-center mb-8 sm:mb-12">
@@ -18,7 +18,7 @@ const Skills = () => {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight">Habilidades Técnicas</h2>
           <div className="w-16 sm:w-24 h-px bg-portfolio-accent mx-auto mb-4 sm:mb-6 opacity-60 mt-4"></div>
             <p className="text-base sm:text-lg text-portfolio-text-dim max-w-3xl mx-auto leading-relaxed px-4">
-              Tecnologias e ferramentas que utilizo. Sempre buscando aprendizado contínuo e aplicação prática em projetos.
+              Tecnologias e ferramentas que mais utilizo. Sempre buscando aprendizado contínuo e aplicação prática em projetos.
             </p>
         </div>
 
